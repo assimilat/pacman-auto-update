@@ -4,7 +4,7 @@ pkgname="pacman-auto-update"
 install="recipes.sh"
 
 pkgdesc="Keeps packages from compiled repositories updated hourly"
-url="https://github.com/cmuench/pacman-auto-update"
+url="https://github.com/assimilat/pacman-auto-update"
 license=("GPL2")
 
 # set pkgver with: date +%s
