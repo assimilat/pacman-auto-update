@@ -38,7 +38,7 @@ autoupdateLocalEpoch () {
 
 
 autoupdateRepoEpoch () {
-	curl --silent "https://raw.githubusercontent.com/cmuench/pacman-auto-update/master/package/PKGBUILD" |
+	curl --silent "https://raw.githubusercontent.com/assimilat/pacman-auto-update/master/package/PKGBUILD" |
 	grep "pkgver=" |
 	cut --delimiter='=' --fields=2
 }
@@ -100,7 +100,7 @@ criticalTrap () {
 
 
 downloadAutoupdatePackageComponents () {
-	local url="https://raw.githubusercontent.com/cmuench/pacman-auto-update/master/package"
+	local url="https://raw.githubusercontent.com/assimilat/pacman-auto-update/master/package"
 
 	curl --silent "${url}/PKGBUILD" > PKGBUILD
 	curl --silent "${url}/recipes.sh" > recipes.sh
